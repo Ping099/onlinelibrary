@@ -1,0 +1,171 @@
+.contentbai {
+    display: flex;
+    background-image: url(../imges/bg3.jpg);
+    background-position: 0 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.bai {
+    display: block;
+    width: 1800px;
+    height: 650px;
+    margin: 100px auto;
+    /* left: 70%; */
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+
+
+.bai li {
+    width: 250px;
+    float: left;
+    border: left;
+    border-left: 1px solid #fff;
+    position: relative;
+    transition: all 1s;
+}
+
+.flag {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 1440%;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    background-color: rgb(158, 153, 147, 0.5);
+}
+
+.bai:hover li {
+    width: 40px;
+}
+
+.bai li:hover {
+    width: 840px;
+}
+
+/* 数字资源 */
+.sz:nth-child(1),
+.sz:nth-child(3),
+.sz:nth-child(6),
+.sz:nth-child(8) {
+    color: rgb(255, 255, 255);
+    background-color: rgba(38, 50, 101, 0.6);
+}
+
+.sz:nth-child(2),
+.sz:nth-child(4),
+.sz:nth-child(5),
+.sz:nth-child(7) {
+    color: rgba(38, 50, 101, );
+    /* background-color: rgb(255, 255, 255); */
+}
+
+.rong {
+    width: 1650px;
+    margin: 5px auto;
+}
+
+.math {
+    margin: 5px 20px;
+    /* display: flex; */
+}
+
+.iconfont {
+
+    display: inline-block;
+}
+
+.logo a {
+    font-size: 60px;
+}
+
+i {
+    width: 100px;
+    height: 100px;
+    font-size: 100px;
+}
+
+.lei2,
+.lei4,
+.lei5,
+.lei7 {
+    display: flex;
+    float: left;
+    background-color: rgba(255, 255, 255, 0.801);
+    margin: 40px auto;
+    width: 310px;
+    padding: 40px;
+    height: 300px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 15%;
+
+}
+
+/* .math:nth-child(1),
+.math:nth-child(3),
+.math:nth-child(5),
+.math:nth-child(7) {
+    background-color: rgba(167, 20, 20, 0.6);
+} */
+.lei1,
+.lei3,
+.lei6,
+.lei8 {
+    background-color: rgba(38, 50, 101, 0.6);
+    display: flex;
+    float: left;
+    /* background-color: rgba(255, 255, 255, 0.801); */
+    margin: 40px auto;
+    width: 310px;
+    padding: 40px;
+    height: 300px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 15%;
+}
+
+/* .math li:nth-child(2),
+.lei:nth-child(4),
+.lei:nth-child(6),
+.lei:nth-child(8) {
+    color: rgba(38, 50, 101, 0.6);
+    background-color: rgb(255, 255, 255);
+} */
+
+
+.lei dl {
+    margin: auto;
+}
+
+/* .lei:nth-child(2),
+.lei:nth-child(4),
+.lei:nth-child(6),
+.lei:nth-child(8) {
+    border: 2px solid rgb(38, 50, 101);
+} */
+
+.dcr {
+    display: none;
+}
+
+.lei:hover {
+    .dcr {
+        display: block;
+    }
+
+    transition: 2s;
+    background-color: bisque;
+    width: 300px;
+}

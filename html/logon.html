@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图书馆登录界面</title>
+    <link rel="stylesheet" href="../css/logon.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navigation">
+            <a href="../html/layout.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <button class="btnLogin-popup">Login</button>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <div class="form-box login">
+            <h2>登录</h2>
+            <form action="#" id="form1">
+                <div class="input-box">
+                    <span class="icon"><i class="iconfont icon-youxiang"></i></span>
+                    <input type="text" id="email1" placeholder=" ">
+                    <label for="">Email</label>
+                    <small class="error-message"></small>
+                </div>
+                <div class="input-box">
+                    <span class="icon"></span>
+                    <input type="password" id="password1">
+                    <label for="">Password</label>
+                    <small class="error-message"></small>
+                </div>
+                <div class="remember-forgot">
+                    <label for=""><input type="checkbox">点这里记住我</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="">忘记密码？</a>
+                </div>
+                <div class="main">
+                    <div class="gcode"></div>
+                    <input type="text" id="inp">
+                    <small class="er"> </small>
+                </div>
+                <button type="submit" class="btn">登录</button>
+                <div class="login-register">
+                    <p>还没有账户？
+                        <a href="#" class="register-link">注册</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+        <div class="form-box register">
+            <h2>注册</h2>
+            <form action="#" id="form2">
+
+                <div class="input-box">
+                    <span class="icon"><i class="iconfont icon-my"></i></span>
+                    <input type="text" id="name">
+                    <label for="">Username</label>
+                    <small class="error-message"></small>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><i class="iconfont icon-youxiang"></i></span>
+                    <input type="text" id="email2">
+                    <label for="">Email</label>
+                    <small class="error-message"></small>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"></span>
+                    <input type="password" id="password2">
+                    <label for="">Password</label>
+                    <small class="error-message"></small>
+                </div>
+
+
+                <div class="remember-forgot">
+                    <label for=""><input type="checkbox">是否同意用户协议和隐私政策</label>
+                    <a href="#" class="login-link">返回登录</a>
+                </div>
+
+                <button type="submit" class="btn">注册</button>
+
+                <div class="login-register">
+                    <p>其他登录方式
+
+                    </p><i class="iconfont icon-weixin"></i>
+                    &nbsp;&nbsp;
+                    <i class="iconfont icon-QQ"></i>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../js/logon.js"></script>
+    <!-- <script src="../js/logon.js"></script> -->
+</body>
+
+</html>
