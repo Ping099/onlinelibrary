@@ -1,0 +1,421 @@
+#top {
+    height: 50px;
+    background-color: rgb(49, 46, 45);
+}
+
+.logo {
+    width: 80px;
+    height: 40px;
+
+}
+
+#top .top_left div {
+    float: left;
+    font: 700 50px;
+    /* 在一行内显示 */
+}
+
+#top ul li {
+    float: left;
+    line-height: 32px;
+    margin: 10px;
+    color: #fff;
+    /* 在一行内显示 */
+}
+
+#top ul li a {
+    color: #fff;
+}
+
+#top ul li:hover {
+    font-weight: bold;
+
+}
+
+#top ul li a:hover {
+    font-weight: bold;
+    color: rgb(58, 161, 127);
+
+}
+
+/* 导航栏 */
+.navcontent {
+    background-image: url(../imges/shu2.png);
+}
+
+#nav {
+    display: block;
+    height: 80px;
+    background-image: url(../imges/shu2.png);
+
+    position: relative;
+    border: none;
+    border-radius: 10em;
+    display: flex;
+    list-style: none;
+    /* background: wheat; */
+    box-shadow: 20px 40px 40px #00000033;
+    padding: 10px;
+}
+
+#nav li a {
+    position: relative;
+    padding: 15px 50px;
+    font: 500 30px '优设标题黑';
+    border: none;
+    outline: none;
+    color: black;
+    font-weight: bolder;
+    display: inline-block;
+    text-decoration: none;
+    z-index: 3;
+}
+
+.slide1,
+.slide2 {
+    position: absolute;
+    display: inline-block;
+    height: 60px;
+    border-radius: 10em;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1.05);
+}
+
+.slide1 {
+    background-color: rgb(170, 190, 255);
+    z-index: 2;
+}
+
+.slide2 {
+    opacity: 0;
+    background-color: rgba(170, 190, 255, .5);
+    z-index: 1;
+    box-shadow: 0 0 20px #ffffffaa inset;
+}
+
+.squeeze {
+    transform: scale(0.9);
+}
+
+
+
+
+/* #nav {
+    overflow: color hidden;
+} */
+
+.father {
+    /* margin: auto; */
+    justify-content: right;
+    display: inline-block;
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: .5s;
+    /* background-color: #91defe; */
+}
+
+.son>li {
+    padding: 10px;
+    background-color: #fff;
+
+}
+
+.son {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    top: 90px;
+    left: 10px;
+    padding: 5px;
+    z-index: 999;
+}
+
+.son li:hover {
+    background-color: #ed454e;
+    color: #fff;
+
+}
+
+.father:hover {
+    background-color: #ed454e;
+}
+
+.father:hover .son {
+    display: block;
+}
+
+#nav li a:hover {
+    color: #fff;
+    font-size: larger;
+    font: 600 40px '优设标题黑';
+}
+
+/* 轮播图 */
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    bottom: 0;
+    text-decoration: none;
+}
+
+.content-slp2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    /* 背景渐变 */
+    /* background-image: linear-gradient(to bottom right,
+            #91defe,
+            #99c0f9,
+            #bdb6ec,
+            #d7b3e3,
+            #efb3d5,
+            #f9bccc); */
+    /* background-color: #b7c4d8; */
+    background-image: url(../imges/bg1.jpg);
+    background-position: 0 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 680px; */
+    width: 100%;
+
+}
+
+#slp {
+    width: 1200px;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 10px 5px 50px rgba(122, 39, 39, 0.39);
+}
+
+.images {
+    width: 600%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: .2s;
+}
+
+.img {
+    width: 100%;
+    background-size: cover;
+}
+
+.img:nth-child(1) {
+    background-image: url("../imges/slp1.jpg");
+    background-repeat: round;
+}
+
+.img:nth-child(2) {
+    background-image: url("../imges/slp2.jpg");
+
+}
+
+.img:nth-child(3) {
+    background-image: url("../imges/slp3.jpg");
+}
+
+.img:nth-child(4) {
+    background-image: url("../imges/slp4.jpg");
+}
+
+.img:nth-child(5) {
+    background-image: url("../imges/slp5.jpg");
+}
+
+.img:nth-child(6) {
+    background-image: url("../imges/slp6.jpg");
+}
+
+.img:nth-child(7) {
+    background-image: url("../imges/slp7.jpg");
+}
+
+.min {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 40px;
+    width: 30%;
+    z-index: 999;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.m {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: solid rgba(255, 255, 255, 0.5) 5px;
+    background-color: #fff;
+}
+
+.button {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.button-left,
+.button-right {
+    font-size: 50px;
+    background-color: rgba(102, 123, 161, 0.288);
+    padding: 0 20px;
+    cursor: pointer;
+    line-height: 700px;
+    color: #fff;
+}
+
+.bg {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./img/04.png);
+    z-index: -9999;
+    position: absolute;
+    filter: blur(12px);
+    opacity: .5;
+
+}
+
+/* 搜索框 */
+.shell {
+    top: 50px;
+    margin: auto;
+    position: relative;
+    width: 1000px;
+    padding: 33px;
+    background-color: #ed454e;
+    border-radius: 20px;
+    box-shadow: 0 10px 50px #fc9494, 0 0 0 20px rgba(255, 252, 233, 0.928);
+}
+
+.shell input {
+    width: 80%;
+    height: 40px;
+    color: #fff;
+    /* 输入框字体大小 */
+    font: 15 30px '优设标题黑';
+    border: 0;
+    background-color: transparent;
+}
+
+.shell input::placeholder {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.shell a {
+    display: flex;
+    /* 放大镜大小 */
+    font-size: 60px;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    color: #fff;
+    width: 250px;
+    height: 150px;
+    z-index: 888;
+}
+
+.shell a .fa {
+    margin: 10px 28px;
+    transition: .3s;
+}
+
+.shell a .fa-search {
+    transform: translateX(-80px);
+    opacity: 1;
+}
+
+.shell a .fa-hand-o-right {
+    transform: translateX(-100px);
+    opacity: 0;
+}
+
+.shell a:hover .fa-search {
+    transform: translateX(0);
+    opacity: 0;
+}
+
+.shell a:hover .fa-hand-o-right {
+    transform: translateX(110px);
+    opacity: 1;
+}
+
+.shell a::before {
+    content: 'GO!';
+    position: absolute;
+    display: block;
+    font-size: 50px;
+    background-color: #ffac75;
+    padding: 5px 30px;
+    top: 50px;
+    right: -25px;
+    border-radius: 10px;
+    transition: .3s;
+    opacity: 0;
+    animation: box 1s infinite ease;
+}
+
+.shell a:hover::before {
+    top: -115px;
+    opacity: 1;
+}
+
+@keyframes box {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    33% {
+        transform: rotate(8deg);
+    }
+
+    66% {
+        transform: rotate(-8deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* 视差 */
+.content-slp2 {
+    /* position: relative; */
+    overflow: hidden;
+}
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#text {
+    position: absolute;
+    font-size: 5em;
+    color: darkslategray;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
+.parallax img {
+    position: absolute;
+    top: -600px;
+    left: -400px;
+    /* height: 100px; */
+    width: 2200px;
+    /* transform: rotateX(-100px); */
+    pointer-events: none;
+}

@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* position: relative;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    background-image: url(../imges/bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(3px);
+    backdrop-filter: blur(8px); */
+    height: 1280px;
+    height: 1009px;
+}
+
+.contenta {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    display: flex;
+    background-image: url(../imges/load1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+
+
+.mohu {
+    filter: blur(8px) brightness(0.2);
+    /* backdrop-filter: blur(100px); */
+    transition: 2.4s;
+}
+
+.a {
+    width: 270px;
+    height: 420px;
+    position: absolute;
+    top: 150px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: .8s;
+}
+
+.b,
+.c,
+.d,
+.e,
+.f {
+    width: 270px;
+    height: 400px;
+    position: absolute;
+    /* 翻页的起点在左边 */
+    transform-origin: left;
+    background-size: cover;
+    /* 翻页时元素之间的延迟 */
+    transition: calc(var(--i)*.3s);
+    /* 翻页时元素的层级 */
+    z-index: calc(var(--i)*99);
+}
+
+.b,
+.c {
+    border: solid 20px;
+    border-color: rgb(99, 164, 166);
+    border-left: none;
+    top: -20px;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 8px 9px 10px rgb(0, 0, 0, 0.5);
+}
+
+.a:hover .b {
+    border-left: cadetblue 20px solid;
+}
+
+.a:hover .c,
+.a:hover .d,
+.a:hover .e,
+.a:hover .f {
+    transform: rotateY(-180deg);
+    transition: calc(var(--s)*.4s);
+    z-index: calc(var(--s)*99);
+}
+
+.a:hover {
+    transform: translateX(100px);
+}
+
+button a {
+    font-weight: bolder;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(83, 133, 103);
+}
+
+button {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    /* margin: 50px auto; */
+}
+
+.before {
+    /* top: 50%; */
+    position: absolute;
+    transition: 1s;
+    z-index: 100;
+    width: 100px;
+    height: 50px;
+    /* margin-left: -90px;
+    margin-top: 380px; */
+    border-radius: 15px;
+    border: none;
+    /* display: none; */
+    display: block;
+    transition: 1s;
+    background-color: aliceblue;
+}
+
+.img.ac {
+    display: block;
+    font-weight: bold;
+    color: darkseagreen;
+    transition: 1.5s;
+    top: -50%;
+    left: -82%;
+    position: absolute;
+    z-index: 100;
+    width: 900px;
+    height: 600px;
+    transform: scale(1);
+}
+
+.img {
+    transform: scale(0);
+    width: 0px;
+    height: 0px;
+    /* display: none; */
+    font-weight: bold;
+    color: darkseagreen;
+    transition: 2s;
+    top: 70%;
+    left: -10%;
+    position: absolute;
+    z-index: 100;
+}
+
+.active {
+    display: block;
+    background-color: rgb(238, 255, 196);
+    font-weight: bold;
+    color: darkseagreen;
+    transition: 2s;
+    top: 46%;
+    position: absolute;
+    z-index: 100;
+    width: 120px;
+    height: 70px;
+
+    /* margin-top: 380px; */
+    border-radius: 15px;
+    border: none;
+    /* display: none; */
+    /* display: block; */
+    /* transition: 1s; */
+    /* background-color: aliceblue; */
+}
+
+.zi {
+    /* position: absolute;
+    color: rgb(37, 47, 94);
+    font-size: 100px;
+    margin: auto;
+    top: 30%;
+    font-weight: bolder;
+    left: 35%;
+    height: 100px;
+    width: 1000px; */
+    font-size: 0px;
+    color: rgb(255, 129, 39);
+    /* display: none; */
+}
+
+.display {
+    position: absolute;
+    color: rgb(255, 234, 127);
+    font-size: 100px;
+    margin: auto;
+    top: 30%;
+    font-weight: bolder;
+    left: 35%;
+    height: 100px;
+    width: 1000px;
+    transition: 2s;
+    /* display: none; */
+}

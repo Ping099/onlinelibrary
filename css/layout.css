@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/* 布局 */
+body {
+    background-color: #2b2826;
+}
+
+#top,
+#head,
+#main,
+#footer,
+#content-slp {
+    height: 1000px;
+    width: 100%;
+    /* border: 1px solid #000; */
+}
+
+.content {
+    margin: 0 auto;
+    width: 1280px;
+    /* border: 1px solid #fc0404; */
+}
+
+#content-slp {
+    background-color: hotpink;
+}
+
+#nav {
+    /* background-color: aquamarine; */
+    width: 100%;
+    display: block;
+    /* margin: auto; */
+    align-content: center;
+    align-items: center;
+}
+
+
+/* #footer {
+    background-color: cornflowerblue;
+} */
+
+/* 返回顶部 */
+#totop {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    right: 60px;
+    bottom: 100px;
+    z-index: 100;
+}
+
+#totop #btn {
+    display: block;
+    width: 80px;
+    height: 80px;
+    /* background: url("../images/totop.png") no-repeat 0px 0px; */
+    border-radius: 9px;
+}
+
+.dv {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    height: 220px;
+    line-height: 220px;
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+
+.main1 {
+    background-image: url(../imges/bg2.jpg);
+    background-position: 0 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 980px;
+    width: 100%;
+}

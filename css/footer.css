@@ -1,0 +1,55 @@
+#footer {
+    background-image: url(../imges/bg4.jpg);
+    background-position: 0 0;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 880px;
+    width: 100%;
+    /* color: black; */
+
+}
+
+.footercontents {
+    /* margin: auto; */
+    display: flex;
+    position: relative;
+    height: 800px;
+    top: 150px;
+    background-color: aliceblue;
+    opacity: .8;
+}
+
+.footer-content {
+    display: inline-block;
+    width: 300px;
+    margin: auto;
+    margin-left: 200px;
+}
+
+.footer-content li {
+    margin-bottom: 30px;
+    /* color: black; */
+}
+
+.footer-content a {
+    margin-bottom: 30px;
+    color: black;
+}
+
+.footer-content h4 {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.footer-content li a {
+    display: block;
+    /* color: darkslategrey; */
+    /* font-size: 30px; */
+}
+
+.footer-content li a:hover {
+
+    color: rgb(85, 186, 148);
+    /* color: darkslategrey; */
+    /* font-size: 30px; */
+}
